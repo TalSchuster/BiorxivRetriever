@@ -28,7 +28,7 @@ To get only titles and links without metadata and full text (when possible):
 papers = br.query('covid remdesivir', metadata=False, full_text=False)
 ```
 
-To use [Rxivist](https://www.rxivist.org/) as the search engine (provides extra metadata but donensn't have all the papers):
+To use [Rxivist](https://www.rxivist.org/) as the search engine (provides extra metadata but doesn't have all papers):
 ```
 br = BiorxivRetriever(search_engine='rxivist')
 ```
