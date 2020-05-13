@@ -6,7 +6,7 @@ with open('README.md', encoding='utf-8') as f:
 setup(
   name = 'biorxiv_retriever',
   packages = ['biorxiv_retriever'],
-  version = '0.12',
+  version = '0.20.0',
   license='MIT',
   description = 'Simple retriever for Biorxiv articles',
   long_description_content_type='text/markdown',
@@ -14,10 +14,11 @@ setup(
   author = 'Tal Schuster',
   author_email = 'my.email@mit.edu',
   url = 'https://github.com/TalSchuster/BiorxivRetriever/',
-  download_url = 'https://github.com/TalSchuster/BiorxivRetriever/biorxiv_retriever/v_012.tar.gz',
+  download_url = 'https://github.com/TalSchuster/BiorxivRetriever/biorxiv_retriever/v_0_20_0.tar.gz',
   keywords = ['Biology', 'Rxivist', 'Biorxiv', 'retriever'],
   install_requires=[
           'tqdm',
+          'lxml',
           'beautifulsoup4',
       ],
   classifiers=[
