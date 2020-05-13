@@ -17,7 +17,7 @@ git clone https://github.com/TalSchuster/BiorxivRetriever.git
 python setup.py install
 ```
 
-# Usage
+# API
 ```
 from biorxiv_retriever import BiorxivRetriever
 br = BiorxivRetriever()
