@@ -6,8 +6,15 @@ Given a text query, search for relevant papers on Biorxiv and get their links an
 
 # Install
 
+Install with pip:
 ```
 pip install biorxiv_retriever
+```
+
+Alternatively, clone this repo and install:
+```
+git clone https://github.com/TalSchuster/BiorxivRetriever.git
+python setup.py install
 ```
 
 # Usage
