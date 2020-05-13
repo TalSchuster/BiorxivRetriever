@@ -1,14 +1,20 @@
 from distutils.core import setup
+
+with open('README.md', encoding='utf-8') as f:
+    long_description = f.read()
+
 setup(
   name = 'biorxiv_retriever',
   packages = ['biorxiv_retriever'],
-  version = '0.11',
+  version = '0.12',
   license='MIT',
   description = 'Simple retriever for Biorxiv articles',
+  long_description_content_type='text/markdown',
+  long_description=long_description,
   author = 'Tal Schuster',
   author_email = 'my.email@mit.edu',
   url = 'https://github.com/TalSchuster/BiorxivRetriever/',
-  download_url = 'https://github.com/TalSchuster/BiorxivRetriever/biorxiv_retriever/v_011.tar.gz',
+  download_url = 'https://github.com/TalSchuster/BiorxivRetriever/biorxiv_retriever/v_012.tar.gz',
   keywords = ['Biology', 'Rxivist', 'Biorxiv', 'retriever'],
   install_requires=[
           'tqdm',
