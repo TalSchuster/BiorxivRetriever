@@ -68,7 +68,11 @@ class BiorxivRetriever():
 
         page_links = page_soup.find_all("li", {"class": "pager-item"})
         if len(page_links) > 0:
-            num_pages = int(page_links[-1].text)
+            page_possible_last = page_soup.find("li", {"class": "pager-last"})
+            if page_possible_last is not None:
+                num_pages = int(page_possible_last.text)
+            else:
+                num_pages = int(page_links[-1].text)
             for i in range(1, num_pages):
                 page_url = url + '?page={}'.format(i)
                 page_html = request.urlopen(page_url).read().decode("utf-8")
@@ -104,8 +108,11 @@ class BiorxivRetriever():
 
                     abstract = page_soup.find("div", {
                         'class': 'abstract'
-                    }).get_text(' ')
-                    paper['abstract'] = abstract
+                    })
+                    if abstract is not None:
+                        paper['abstract'] = abstract.get_text(' ')
+                    else:
+                        paper['abstract'] = ''
 
                 if full_text:
                     article_txt = self._get_article_content(page_soup)
