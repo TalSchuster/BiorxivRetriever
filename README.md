@@ -1,3 +1,5 @@
+![biorxiv-retriever](https://img.shields.io/pypi/dm/biorxiv-retriever: "biorxiv-retriever")
+
 # BiorxivRetriever
 Simple python retriever for Biorxiv articles.
 
