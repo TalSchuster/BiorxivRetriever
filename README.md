@@ -1,8 +1,10 @@
 # BiorxivRetriever
-Simple python retriever for Biorxiv articles.
+Simple python retriever for BioRxiv articles.
+
+Wraps HTTP requests. Follow the guidelines and policies of [BioRxiv](https://www.biorxiv.org/tdm).
 
 # Purpose
-Given a text query, search for relevant papers on Biorxiv and get their links and content.
+Given a text query, search for relevant papers on BioRxiv and get their links and content.
 
 # Install
 
