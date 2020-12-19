@@ -1,3 +1,6 @@
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/biorxiv-retriever)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/biorxiv-retriever)
+
 # BiorxivRetriever
 Simple python retriever for BioRxiv articles.
 
